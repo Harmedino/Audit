@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin page</title>
+    <script src="https://kit.fontawesome.com/1cb0bb75dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shubham.css">
+
+</head>
+<body>
+<div id="shcontainer">
+    <div id="shc1"> <p><a href="" style="text-decoration: none;color:#3665f3;">Tell us what you think</a></p></div>
+    <div id="shc2">
+        <img onclick="window.location.href='index.html'" src="https://i.pinimg.com/236x/b6/1b/53/b61b53ea4b85fb2c283341d8dbe8243c.jpg" alt="">
+    </div>
+   
+
+<div id="shc4">
+    <h2>Sign in to your account   </h2>
+</div>
+<div id="shc5">
+<h4>Sign in to ebay or <a href="register.html">create an account</a></h4>
+
+</div>
+
+<div id="shc6">
+
+<div id="shc61">
+    <input type="text"  placeholder="   Email or Username">
+    <button style=" background-color:#3665f3;color:white; border:1px solid #3665f3;"><h2><b>Continue</b></h2></button>
+    <hr>
+   
+</div>
+
+
+
+</div>
+
+<div id="shc8">
+    <p>Using a public or shared device?
+        Uncheck to protect your account.</p><br>
+        
+</div>
+<div id="shc9" >
+    <a href="">Learn more</a>
+</div>
+<hr>
+<div id="shc10">
+    <p>Copyright © 1995-2022 eBay Inc. All Rights Reserved.
+        Accessibility, User Agreement, Privacy, Cookies, Do not sell my personal information and AdChoice</p>
+</div>
+
+<!-- conatiner div end here -->
+</div> 
+
+</body>
+</html>
+<script>
+
+let logindata = JSON.parse(localStorage.getItem("loginData"))
+
+// console.log(logindata[0].name)
+
+let signEmail = document.querySelector("#shc61 > input[type=text]")
+
+let continuebtn = document.querySelector("#shc61 > button:nth-child(2)")
+continuebtn.addEventListener("click",(event)=>{
+event.preventDefault()
+let flag = false;
+if(logindata == undefined){
+alert("Invalide Email Id")
+}
+else if(logindata[0].email === signEmail.value)
+{
+    flag = true;
+    localStorage.removeItem("flagforindex");
+    localStorage.setItem("flagforindex" , flag);
+    alert("Welcome in eBay");
+    window.location.href= "index.html";
+}
+else{
+    localStorage.removeItem("flagforindex")
+    localStorage.setItem("flagforindex" , flag);
+    alert("Incorrect Email ID");
+
+}
+
+})
+
+</script>
