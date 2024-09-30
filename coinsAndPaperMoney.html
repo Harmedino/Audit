@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comics Page</title>
     <link rel="stylesheet" href="collectiblesAndArt.css">
+    <link rel="stylesheet" href="shubham.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="./script/data.js"></script>
@@ -16,7 +17,6 @@
 <body>
 
       <!-- top navber and bottom navbar -->
-
       <div id="sc1">
         <div id="sc11">
             <h4 id="sc111">Hi! <a href="signin.html">Sign in</a> or <a href="register.html">register</a></h4>
@@ -25,8 +25,9 @@
 
         </div>
         <div id="sc12">
-            <h4>Sell </h4>
-            <h4>Watchlist <i class="fa-solid fa-angle-down"></i></h4>
+            <a href="admin.html" style="color: black;text-decoration: none; margin-top: 6px;">
+                <p>Post product</p>
+            </a>
             <div id="helloMouse">
                 <h4 onclick="window.location.href='signin.html'">My eBay<i class="fa-solid fa-angle-down"></i></h4>
                 <div id="absolute_My_eBay">
@@ -39,8 +40,8 @@
                     <a href="">
                         <p> Bids/Offers</p>
                     </a>
-                    <a href="watchlist.html">
-                        <p>Watchlist</p>
+                    <a href="admin.html">
+                        <p>Post product</p>
                     </a>
                     <a href="">
                         <p>Purchase History</p>
@@ -65,18 +66,12 @@
             </div>
             <div style="padding:3.5%;" id="sc121">
                 <i class="fa-solid fa-bell"></i>
-                <div id="sc122">
-                    <h1>You are all caught up!</h1>
-                </div>
+              
 
             </div>
             <div style="margin:5%;" id="sc13">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div id="sc131">
-                    <h1>Your cart is empty</h1>
-                    <h3>Time to start shopping!</h3>
-                </div>
-                <P id="cartData">3</P>
+                <a href="cart.html" style="color: black; font-size: 18px;">  <i class="fa-solid fa-cart-shopping"> </i> </a>
+                
             </div>
         </div>
 
@@ -85,34 +80,16 @@
 
 
 
-
-    <!-- 
-            1st nav bar ends here
-        -->
-
-
-
     <div id="sc2">
         <div id="sc21" onclick="window.location.href='index.html'">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png"
-                alt="">
+            <img src="https://i.pinimg.com/236x/b6/1b/53/b61b53ea4b85fb2c283341d8dbe8243c.jpg"
+            alt="">
         </div>
 
-        <div id="sc22">
-            <p>
-                Shop by category
-            </p>
-            <i class="fa-solid fa-angle-down"></i>
-        </div>
+      
         <div id="sc23">
             <i class="fa-solid fa-magnifying-glass" style="margin-left: 5px;"></i>
-            <input type="text" name="" id="">
-            <div>
-                <button name="" id="">
-                    All category
-                </button>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
+            <input type="text" name="" id="" style="outline: none;">
         </div>
 
         <button>
